@@ -1,0 +1,78 @@
+* {
+  all: unset;
+}
+
+scale trough {
+background-color: #222831;
+border-radius: 5px;
+min-height: 80px;
+min-width: 12px;
+margin: 0.3rem 0 0.3rem 0.1rem;
+padding: 6px;
+}
+
+.tray-vol-bar trough highlight{
+background: linear-gradient(#FF2E63, #08D9D6);
+border-radius: 5px;
+}
+
+.tray-vol-icon {
+border-top: 3px solid #08D9D6;
+border-right: 3px solid #08D9D6;
+border-left: 3px solid #FF2E63;
+border-bottom: 3px solid #FF2E63;
+border-radius: 9px;
+color: #08D9D6 ;
+padding: 6px;
+background-color: #222831;
+min-width: 15px;
+min-height: 15px;
+}
+
+.tray-brightness-bar trough highlight{
+background: linear-gradient(#FF2E63, #08D9D6);
+border-radius: 5px;
+}
+    
+.tray-brightness-icon {
+font-family: HEAVYDATA Nerd Font;
+border-top: 3px solid #FF2E63;
+border-right: 3px solid #FF2E63;
+border-left: 3px solid #08D9D6;
+border-bottom: 3px solid #08D9D6;
+border-radius: 9px;
+color: #FF2E63;
+padding: 6px;
+background-color: #222831;
+min-width: 20px;
+min-height: 20px;
+}
+
+.wifi {
+font-family: HEAVYDATA Nerd Font;
+border-top: 3px solid #FF2E63;
+border-right: 3px solid #FF2E63;
+border-left: 3px solid #08D9D6;
+border-bottom: 3px solid #08D9D6;
+border-radius: 9px;
+color: #FF2E63;
+padding: 6px;
+min-width: 20px;
+min-height: 20px;
+}
+
+.bat {
+color: #08D9D6;
+}
+
+.stat-bat {
+  color: #08D9D6
+}
+
+.bat-widget {
+  color: #FF2E63
+}
+
+.charging {
+  color: #FF2E63;
+}

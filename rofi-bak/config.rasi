@@ -1,0 +1,134 @@
+* {
+
+font : "HEAVYDATA Nerd Font 12" ;
+
+cyan :  #08D9D6 ;
+black : #252A34 ;
+red :   #FF2E63 ;
+white : #EAEAEA ;
+
+accent :  @black;
+urgent:   @red;
+
+background-color : transparent ;
+text-color: @white;
+
+margin:   0;
+padding:  0;
+spacing:  0;
+
+}
+
+element-icon, element-text, scrollbar {
+cursor: pointer;
+}
+
+
+window {
+
+location : northwest ;
+width : 300px ;
+y-offset : 9px ;
+x-offset : 18px ;
+
+background-color : @black ;
+
+border-color : @red ;
+border : 3px ;
+border-radius : 25 ;
+
+}
+
+inputbar {
+
+spacing: 8px;
+padding : 4px 8px ;
+
+border-radius : 25 ;
+
+children : [ icon-search, entry];
+
+background-color: @black;
+
+}
+
+icon-search, entry, element-icon, element-text {
+vertical-align: 0.5;
+}
+
+icon-search {
+
+expand   : false;
+filename : "search-symbolic";
+size     : 14px;
+text-color: @white;
+}
+
+entry{
+background-color: @black;
+text-color: @white;
+}
+
+textbox {
+
+padding:  4px 8px;
+text-color: @white; 
+background-color: @black;
+
+}
+
+listview {
+
+padding: 4px 0px;
+
+lines : 39;
+columns : 1 ;
+
+scrollbar: true;
+
+fixed-height : false ;
+dynamic : true ;
+
+}
+
+element {
+
+border-radius : 25 ;
+padding : 2px 8px ;
+spacing:  8px;
+background-color: @black;
+}
+
+element normal.normal {
+    background-color: @black;
+    text-color: @white;
+}
+
+element alternate.normal {
+    background-color: @black;
+    text-color: @white;
+}
+
+element selected {
+text-color       : @white;
+background-color : @black;
+}
+
+element selected urgent {
+background-color : @black;
+}
+
+element-icon {
+size: 0.8em;
+}
+
+element-text {
+text-color: inherit;
+}
+
+scrollbar {
+handle-width : 4px;
+handle-color : @red;
+padding      : 0 4px;
+}
+

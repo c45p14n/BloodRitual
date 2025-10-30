@@ -1,0 +1,15 @@
+(defwindow left
+  :monitor 0
+  :geometry (geometry
+              :x "0.3%"
+              :y "0%"
+              :anchor "left center"
+              :height "97%"
+              :width "2.5%")
+  :reserve (struts 
+              :distance "5px"
+              :side "left")
+  :exclusive true
+  (bar))
+
+

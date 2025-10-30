@@ -1,0 +1,9 @@
+(defwidget main-panel[]
+  (box
+    :class "main-panel"
+    :orientation "v"
+    :space-evenly "false"
+  (label
+    :class "main-panel-icon"
+    :text "󰣇"
+)))

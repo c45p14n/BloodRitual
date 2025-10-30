@@ -1,0 +1,86 @@
+(defwidget tray-icon [?reveal ?revealVar name val icon isActive ?onChange ?onClick iconType]
+  (eventbox 
+    :onhover "${EWW_CMD} update ${revealVar}=true" 
+    :onhoverlost "${EWW_CMD} update ${revealVar}=false"
+    (box 
+      :orientation "v" 
+      :space-evenly "false" 
+      :tooltip "${name} : ${val}%"
+      (revealer 
+        :class "tray-${iconType}-bar"
+        :transition "slideup" 
+        :reveal "${reveal}" 
+        :duration "550ms"
+        (scale 
+          :orientation "v" 
+          :min 0 
+          :max 101 
+          :value {val == "" ? 0 : val} 
+          :active "${isActive}" 
+          :flipped true
+          :onchange "${onChange}"))
+      (button 
+        :class "tray-${iconType}-icon" 
+        :onclick "${onClick}" "${icon}"))))
+
+(defwidget control-status[]
+  (box 
+    :class "tray-container" 
+    :orientation "v" 
+    :space-evenly "false" 
+    :halign "center"
+    (tray-icon 
+      :reveal "${brightReveal}" 
+      :revealVar "brightReveal" 
+      :name "Brightness" 
+      :val "${bright}" 
+      :icon "${brightIcon}" 
+      :iconType "brightness" 
+      :isActive true 
+      :onChange "brightnessctl set {}%")
+    (tray-icon 
+      :reveal "${volReveal}"
+      :revealVar "volReveal" 
+      :name "Volume" 
+      :val "${vol}" 
+      :icon "${volIcon}" 
+      :iconType "vol" 
+      :isActive true 
+      :onChange "pamixer --set-volume {}" 
+      :onClick "pamixer --toggle-mute")
+    (box 
+      :orientation "v" 
+      :space-evenly "false" 
+      :tooltip "Wifi : ${wifi}"
+      (label 
+        :class "wifi" 
+        :text "${wifiIcon}"))
+    (eventbox
+      :onhover "eww update batReveal=true"
+      :onhoverlost "eww update batReveal=false"
+      (box
+      :class "bat-widget"
+      :orientation "v"
+      :space-evenly "false"
+      :spacing 3
+      (revealer 
+      :transition "slideup"
+      :reveal batReveal
+      :duration "550ms"
+      (label 
+      :angle 90
+      :text "${EWW_BATTERY.BAT1.capacity} %  "
+      :class "bat-label"
+      ))
+      (overlay 
+      :class "${'${EWW_BATTERY.BAT1.status}' == 'Charging' ? "Charging" : '${EWW_BATTERY.BAT1.capacity}' < 30 ? "Low" : "Discharging" }"
+      (circular-progress
+      :value "${EWW_BATTERY.BAT1.capacity}"
+      :height 30
+      :thickness 3
+      :start-at 75)
+      (label
+      :text ""
+      :spacing 1
+      :class "stat-bat"
+      ))))))

@@ -1,0 +1,26 @@
+(defpoll hour :interval "1s" "date +%H")
+(defpoll min  :interval "1s" "date +%M")
+
+(defpoll day_word :interval "1m" "date +%a")
+(defpoll day      :interval "1m" "date +%d")
+(defpoll month    :interval "1m"  "date +%m")
+(defpoll year     :interval "1m"  "date +%y")
+
+(defpoll bat :interval "10s"  "scripts/bat.sh bat")
+(defpoll batIcon :interval "10s"  "scripts/bat.sh baticon")
+(defvar batReveal false)
+
+(defpoll vol :interval "1s"  "scripts/vol.sh vol")
+(defpoll volIcon :interval "1s"  "scripts/vol.sh volicon")
+(defvar volReveal false)
+
+(defpoll wifi :interval "1s" "scripts/wifi.sh wifi")
+(defpoll wifiIcon :interval "1s" "scripts/wifi.sh wifiicon")
+(defvar wifiReveal false)
+
+(defpoll bright :interval "1s"  "scripts/backlight.sh bli")
+(defpoll brightIcon :interval "1s"  "scripts/backlight.sh bliicon")
+(defvar brightReveal false)
+
+(defpoll temp :interval "5s" "scripts/temp.sh temp")
+

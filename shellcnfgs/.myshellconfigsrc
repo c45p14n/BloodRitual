@@ -1,0 +1,15 @@
+fastfetch --logo-color-1 red --logo ~/.config/fastfetch/Caspian.txt
+
+alias c='clear'
+
+alias h="helix"
+
+alias n='nvim'
+
+alias ne='sudoedit'
+
+alias r='ranger'
+
+alias y='yazi'
+
+alias p='sudo pacman'

@@ -1,0 +1,19 @@
+(defwidget time []
+  (box 
+    :orientation "v"
+    :class "time"
+  (box 
+    :class "time-hour"
+    hour)
+  (box 
+    :class "time-min"
+    min)))
+
+(defwidget date []
+  (box 
+    :orientation "v"
+    :class "date"
+    day_word
+    day
+    month
+    year))

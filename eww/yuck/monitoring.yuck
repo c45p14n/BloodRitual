@@ -1,0 +1,44 @@
+(defwidget ram []
+  (box
+    :class "ram"
+    (circular-progress  
+      :value {EWW_RAM.used_mem_perc}
+      :class "ram-c"
+      :thickness 4
+      :start-at 75
+      (label 
+        :class "ram-icon"
+        :text ""
+      ))))
+
+(defwidget cpu []
+  (box
+    :class "cpu"
+    (circular-progress
+      :class "cpu-c"
+      :value {EWW_CPU.avg}
+      :thickness 4
+      :start-at 75
+      (label 
+        :class "cpu-icon"
+        :text ""
+      ))))
+
+(defwidget systemtray []
+  (box
+    :orientation "v"
+      (systray
+        :orientation "v"
+        :class "systemtray"
+        :icon-size 15
+        :spacing 6)))
+
+(defwidget temp []
+  (box
+    :orientation "v"
+    (label
+      :class "temp"
+      :text {temp}
+    )
+  )
+)

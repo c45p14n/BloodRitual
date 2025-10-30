@@ -1,0 +1,38 @@
+(defwidget bar []
+  (box 
+    :orientation "v"
+    :space-evenly "true"
+(top)
+(center)
+(end)))
+
+(defwidget top []
+  (box
+    :orientation "v"
+    :space-evenly "false"
+    :class "top"
+    :valign "start"
+(main-panel)
+(temp)
+(ram)
+(cpu)
+(systemtray)
+  ))
+
+(defwidget center []
+ (box
+  :orientation "v"
+  :space-evenly "false"
+  :class "center"
+  :valign "center"
+(time)))
+
+(defwidget end []
+  (box
+    :orientation "v"
+    :space-evenly "false"
+    :class "end"
+    :valign "end"
+    :spacing 5
+(control-status)
+(date)))
