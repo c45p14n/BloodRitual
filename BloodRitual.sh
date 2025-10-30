@@ -117,6 +117,10 @@ readonly PACKAGES=(
 
     #tired-of-this-battery
     "power-profiles-daemon"
+
+    #Book
+    "zathura"
+    "zathura-pdf-mupdf"
 )
 
 readonly REPO_URL="https://github.com/c45p14n/BloodRitual.git"
@@ -142,6 +146,7 @@ declare -A FILE_MAPPINGS=(
     ["rofi-bak"]="$HOME/.config/rofi-bak"
     ["rofi-bak-b&b"]="$HOME/.config/rofi-bak-b&b"
     ["shellcnfgs"]="$HOME/shellcnfgs"
+    ["zathura"]="$HOME/.config/zathura"
 )
 
 # ===========================================================================
