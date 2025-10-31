@@ -123,6 +123,11 @@ readonly PACKAGES=(
     "p7zip"
     "rar"
 
+    #bluetooth-for-wallflowers
+    "bluez"
+    "bluez-utils"
+    "blueman"
+
     #gui-file-managers-are-for-losers
     "ranger"
     "yazi"
