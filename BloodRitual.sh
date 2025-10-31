@@ -116,6 +116,7 @@ readonly PACKAGES=(
     "cava"
 
     #unglamorous-adulting-software
+    "wl-clipboard"
     "blueman"
     "file-roller"
     "zip"
@@ -171,6 +172,7 @@ declare -A FILE_MAPPINGS=(
     ["rofi-bak"]="$HOME/.config/rofi-bak"
     ["rofi-bak-b&b"]="$HOME/.config/rofi-bak-b&b"
     ["shellcnfgs"]="$HOME/shellcnfgs"
+    ["waybar"]="$HOME/.config/waybar"
     ["zathura"]="$HOME/.config/zathura"
 )
 
