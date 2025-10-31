@@ -20,7 +20,7 @@ configuration {
 }
 
 /*****----- Global Properties -----*****/
-@import                          "shared/colors.rasi"
+@import                          "s~/.config/rofi/colors/black.rasi"
 
 * {
     border-colour:               var(selected);
