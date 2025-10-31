@@ -23,6 +23,21 @@ set -euo pipefail
 # ═══════════════════════════════════════════════════════════════════════════
 
 readonly PACKAGES=(
+    
+    #kerneldom-and-its-political-factions
+    "linux"
+    "linux-headers"
+    "linux-zen"
+    "linux-zen-headers"
+    "linux-lts"
+    "linux-lts-headers"
+    "linux-hardened"
+    "linux-hardened-headers"
+
+    #shells-for-people-who-like-their-terminal-with-attitude
+    "zsh"
+    "fish"
+
     #terminal-emulator-collectors
     "alacritty"
     "kitty"
@@ -36,27 +51,29 @@ readonly PACKAGES=(
     "hyprlock"
     "hyprshot"
     "hyprsunset"
-    "hyprpolkit"
     "nwg-displays"
+    "nwg-look"
 
     #rice-dont-bring-the-plate
     "waybar"
     "eww"
-    "swwww"
+    "swww"
+    "rofi-wayland"
 
     #vim-but-make-it-your-personality
     "neovim"
     "helix"
 
     #when-you-peaked-in-high-school-coding
-    "arduino-ide-bin"
     "thonny"
     
     #browser-hoarding-is-not-a-phase-mom
+    "curl"
+    "wget"
     "brave-bin"
     "zen-browser-bin"
     "firefox"
-    "firefox-esr"
+    "firefox-esr-bin"
     "librewolf-bin"
     "chromium"
     "vivaldi"
@@ -65,7 +82,7 @@ readonly PACKAGES=(
     #antisocial-social-media
     "weechat"
     "hexchat"
-    "Telegram-desktop"
+    "telegram-desktop"
 
     #because-one-video-player-is-for-normies
     "vlc"
@@ -121,6 +138,14 @@ readonly PACKAGES=(
     #Book
     "zathura"
     "zathura-pdf-mupdf"
+
+    #Fonts
+    "nerd-fonts"
+
+    #noobies_programming
+    "python"
+    "nodejs"
+    "npm"
 )
 
 readonly REPO_URL="https://github.com/c45p14n/BloodRitual.git"
