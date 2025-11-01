@@ -83,6 +83,7 @@ readonly PACKAGES=(
     "weechat"
     "hexchat"
     "telegram-desktop"
+    "thunderbird"
 
     #because-one-video-player-is-for-normies
     "vlc"
@@ -122,6 +123,7 @@ readonly PACKAGES=(
     "zip"
     "p7zip"
     "rar"
+    "localsend-bin"
 
     #bluetooth-for-wallflowers
     "bluez"
