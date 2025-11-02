@@ -118,7 +118,7 @@ readonly PACKAGES=(
 
     #unglamorous-adulting-software
     "wl-clipboard"
-    "blueman"
+    "brightnessctl"
     "file-roller"
     "zip"
     "p7zip"
