@@ -51,6 +51,7 @@ readonly PACKAGES=(
     "hyprlock"
     "hyprshot"
     "hyprsunset"
+    "hyprsome"
     "nwg-displays"
     "nwg-look"
 
@@ -114,6 +115,7 @@ readonly PACKAGES=(
     "gotop-bin"
     "nvtop"
     "fastfetch"
+    "nitch"
     "cava"
 
     #unglamorous-adulting-software
