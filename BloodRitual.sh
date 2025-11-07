@@ -95,6 +95,7 @@ readonly PACKAGES=(
     "virtualbox-host-dkms"
 
     #professional-script-kiddie-starter-pack
+    "zaproxy"
     "burpsuite"
     "sqlmap"
     "wireshark-qt"
@@ -126,6 +127,7 @@ readonly PACKAGES=(
     "p7zip"
     "rar"
     "localsend-bin"
+    "bat"
 
     #bluetooth-for-wallflowers
     "bluez"
