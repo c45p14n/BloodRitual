@@ -88,6 +88,7 @@ readonly PACKAGES=(
 
     #because-one-video-player-is-for-normies
     "vlc"
+    "vlc-plugins-all"
     "mpv"
     "mpc"
 
@@ -95,9 +96,9 @@ readonly PACKAGES=(
     "virtualbox-host-dkms"
 
     #professional-script-kiddie-starter-pack
-    "zaproxy"
     "burpsuite"
-    "sqlmap"
+    "nmap"
+    "metasploit"
     "wireshark-qt"
     "tcpdump"
     "hoppscotch-bin"
@@ -109,6 +110,7 @@ readonly PACKAGES=(
     "metadata-cleaner"
     "onionshare"
     "tor"
+    "torsocks"
     "proxychains"
     
     #rice-monitoring-dashboard-addiction
